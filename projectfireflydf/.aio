@@ -1,0 +1,87 @@
+{
+  "project": {
+    "id": "4566206088344606229",
+    "name": "projectfireflydf",
+    "title": "Project Firefly DF",
+    "org": {
+      "id": "57606",
+      "name": "HS2 Solutions Amåçericas Partner Sandbox",
+      "ims_org_id": "0B96B03459707BE40A495C70@AdobeOrg",
+      "details": {
+        "services": [
+          {
+            "name": "Adobe Stock",
+            "code": "StockSDK",
+            "type": "adobeid"
+          },
+          {
+            "name": "PDF Embed API",
+            "code": "ViewSDK",
+            "type": "adobeid"
+          },
+          {
+            "name": "Lightroom Services",
+            "code": "LightroomPartnersSDK",
+            "type": "adobeid"
+          },
+          {
+            "name": "Content and Commerce AI",
+            "code": "ccai-sdk",
+            "type": "adobeid"
+          },
+          {
+            "name": "Creative Cloud Libraries",
+            "code": "CC-Libraries-SDK",
+            "type": "adobeid"
+          },
+          {
+            "name": "Customer Journey Analytics",
+            "code": "CJA SDK",
+            "type": "adobeid"
+          },
+          {
+            "name": "Task Queue Manager",
+            "code": "DvaQueueSDK",
+            "type": "entp"
+          },
+          {
+            "name": "Adobe Photoshop APIs (Trial)",
+            "code": "CIS SDK",
+            "type": "entp"
+          },
+          {
+            "name": "Experience Platform API",
+            "code": "McDataServicesSdk",
+            "type": "entp"
+          },
+          {
+            "name": "I/O Events",
+            "code": "CloudIntegrationSDK",
+            "type": "entp"
+          },
+          {
+            "name": "I/O Management API",
+            "code": "AdobeIOManagementAPISDK",
+            "type": "entp"
+          }
+        ]
+      }
+    },
+    "workspace": {
+      "id": "4566206088344607804",
+      "name": "fireflydev",
+      "title": "fireflydev",
+      "action_url": "https://57606-projectfireflydf-fireflydev.adobeioruntime.net",
+      "app_url": "https://57606-projectfireflydf-fireflydev.adobeio-static.net",
+      "details": {
+        "credentials": [],
+        "services": []
+      }
+    }
+  },
+  "app": {
+    "actions": "actions",
+    "dist": "dist",
+    "web": "web-src"
+  }
+}

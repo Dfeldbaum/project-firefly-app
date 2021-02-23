@@ -1,0 +1,85 @@
+packages:
+  __APP_PACKAGE__:
+    license: Apache-2.0
+    actions:
+      generic:
+        function: actions/generic/index.js
+        web: 'yes'
+        runtime: 'nodejs:12'
+        inputs:
+          LOG_LEVEL: debug
+        annotations:
+          require-adobe-auth: true
+          final: true
+      customer-profile:
+        function: actions/customer-profile/index.js
+        web: 'yes'
+        runtime: 'nodejs:12'
+        inputs:
+          LOG_LEVEL: debug
+          tenant: $CUSTOMER_PROFILE_TENANT
+          apiKey: $SERVICE_API_KEY
+        annotations:
+          require-adobe-auth: true
+          final: true
+      analytics:
+        function: actions/analytics/index.js
+        web: 'yes'
+        runtime: 'nodejs:12'
+        inputs:
+          LOG_LEVEL: debug
+          companyId: $ANALYTICS_COMPANY_ID
+          apiKey: $SERVICE_API_KEY
+        annotations:
+          require-adobe-auth: true
+          final: true
+      worker:
+        function: actions/worker/index.js
+        web: 'yes'
+        runtime: 'nodejs:12'
+        limits:
+          concurrency: 10
+        annotations:
+          require-adobe-auth: true
+      campaign-standard:
+        function: actions/campaign-standard/index.js
+        web: 'yes'
+        runtime: 'nodejs:12'
+        inputs:
+          LOG_LEVEL: debug
+          tenant: $CAMPAIGN_STANDARD_TENANT
+          apiKey: $SERVICE_API_KEY
+        annotations:
+          require-adobe-auth: true
+          final: true
+      target:
+        function: actions/target/index.js
+        web: 'yes'
+        runtime: 'nodejs:12'
+        inputs:
+          LOG_LEVEL: debug
+          tenant: $TARGET_TENANT
+          apiKey: $SERVICE_API_KEY
+        annotations:
+          require-adobe-auth: true
+          final: true
+      audience-manager-cd:
+        function: actions/audience-manager-cd/index.js
+        web: 'yes'
+        runtime: 'nodejs:12'
+        inputs:
+          LOG_LEVEL: debug
+          apiKey: $SERVICE_API_KEY
+        annotations:
+          require-adobe-auth: true
+          final: true
+      publish-events:
+        function: actions/publish-events/index.js
+        web: 'yes'
+        runtime: 'nodejs:12'
+        inputs:
+          LOG_LEVEL: debug
+          apiKey: $SERVICE_API_KEY
+        annotations:
+          require-adobe-auth: true
+          final: true
